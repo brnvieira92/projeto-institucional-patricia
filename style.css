@@ -1,0 +1,177 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background: #ff16c2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header .nav ul li {
+    margin: 0 15px;
+}
+
+.header .nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.about p {
+    font-size: 1.2em;
+}
+
+/* Projects Section */
+.projects {
+    background: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.projects h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form label {
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact form button {
+    padding: 10px 20px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: #45a049;
+}
+
+/* Footer */
+.footer {
+    background: #ff16c2;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .header .nav ul {
+        justify-content: flex-end;
+    }
+
+    .hero,
+    .about,
+    .projects,
+    .contact {
+        text-align: left;
+    }
+
+    .project-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .project-item {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
